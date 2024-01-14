@@ -1,0 +1,124 @@
+.main {
+  height: 100vh;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.top {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: end;
+}
+
+.top .h1 {
+  display: flex;
+  font-size: 11vw;
+  letter-spacing: 3px;
+  overflow: hidden;
+}
+
+@media (max-width: 690px) {
+  .top .h1 {
+    font-size: 11.5vw;
+  }
+}
+
+@media (max-width: 475px) {
+  .top .h1 {
+    font-size: 10vw;
+  }
+}
+
+.bottom {
+  display: flex;
+  flex: 2;
+}
+
+.left {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+}
+
+.left .p {
+  max-width: 60%;
+  font-size: 1vw;
+  color: #fff;
+  text-align: left;
+}
+
+@media (max-width: 1200px) {
+  .left .p {
+    max-width: 70%;
+    font-size: 1.7vw;
+  }
+}
+
+@media (max-width: 790px) {
+  .left .p {
+    max-width: 70%;
+    font-size: 2vw;
+    letter-spacing: 1px;
+  }
+}
+
+@media (max-width: 690px) {
+  .left .p {
+    max-width: 70%;
+    font-size: 1.8vw;
+    letter-spacing: 1px;
+  }
+}
+
+@media (max-width: 475px) {
+  .left .p {
+    max-width: 80%;
+    font-size: 2.5vw;
+    letter-spacing: 1px;
+  }
+}
+
+@media (max-width: 400px) {
+  .left .p {
+    max-width: 90%;
+    font-size: 2.6vw;
+    letter-spacing: 1px;
+  }
+}
+
+.right {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}
+
+.right .h2 {
+  overflow: hidden;
+  display: flex;
+  font-size: 3.5vw;
+  letter-spacing: 0.5vw;
+}
+
+@media (max-width: 790px) {
+  .right .h2 {
+    font-size: 4vw;
+  }
+}
+
+@media (max-width: 690px) {
+  .right .h2 {
+    font-size: 5vw;
+  }
+}
+
+@media (max-width: 400px) {
+  .right .h2 {
+    font-size: vw;
+  }
+}
