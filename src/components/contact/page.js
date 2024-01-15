@@ -1,4 +1,3 @@
-"use client";
 import styles from "./page.module.css";
 import { useRef, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -17,10 +16,6 @@ export default function Index() {
   let time = Math.PI / 2;
   let reqId = null;
 
-  useEffect(() => {
-    setPath(progress);
-  }, []);
-
   const setPath = (progress) => {
     const width = window.innerWidth * 0.7;
     path.current.setAttributeNS(
@@ -29,6 +24,10 @@ export default function Index() {
       `M0 250 Q${width * x} ${250 + progress}, ${width} 250`
     );
   };
+
+  useEffect(() => {
+    setPath(progress);
+  }, [progress, setPath]);
 
   const lerp = (x, y, a) => x * (1 - a) + y * a;
 

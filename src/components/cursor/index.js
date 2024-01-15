@@ -1,10 +1,8 @@
-// Cursor.js
 import React, { useEffect, useState } from "react";
 import styles from "./style.module.css";
 import { motion, useMotionValue, useSpring } from "framer-motion";
 
-export default function Cursor({ pointer }) {
-  const cursorSize = 20;
+export default function Cursor() {
   const mouse = {
     x: useMotionValue(0),
     y: useMotionValue(0),
@@ -18,18 +16,20 @@ export default function Cursor({ pointer }) {
     y: useSpring(mouse.y, smoothOptions),
   };
 
-  const manageMouseMove = (e) => {
-    const { clientX, clientY } = e;
-    mouse.x.set(clientX - cursorSize / 2);
-    mouse.y.set(clientY - cursorSize / 2);
-  };
-
   useEffect(() => {
-    window.addEventListener("mousemove", manageMouseMove);
-    return () => {
-      window.removeEventListener("mousemove", manageMouseMove);
+    const handleMouseMove = (e) => {
+      const cursorSize = 20;
+      const { clientX, clientY } = e;
+      mouse.x.set(clientX - cursorSize / 2);
+      mouse.y.set(clientY - cursorSize / 2);
     };
-  }, []);
+
+    window.addEventListener("mousemove", handleMouseMove);
+
+    return () => {
+      window.removeEventListener("mousemove", handleMouseMove);
+    };
+  }, [mouse.x, mouse.y]);
 
   return (
     <motion.div

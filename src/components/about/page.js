@@ -1,4 +1,3 @@
-"use client";
 import { projects } from "@/components/about/card/data";
 import Card from "./card";
 import { useScroll } from "framer-motion";
@@ -6,7 +5,7 @@ import { useEffect, useRef } from "react";
 import Lenis from "@studio-freight/lenis";
 import styles from "./page.module.css";
 
-export default function index() {
+export default function Index() {
   const container = useRef(null);
   const { scrollYProgress } = useScroll({
     target: container,
@@ -22,7 +21,7 @@ export default function index() {
     }
 
     requestAnimationFrame(raf);
-  });
+  }, []);
 
   return (
     <main ref={container} id="about" className={styles.main}>
