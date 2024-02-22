@@ -91,7 +91,7 @@ export default function Home() {
   return (
     <main id="works" className={styles.main}>
       <div className={styles.works}>
-        <h1 className={styles.h1}>Works</h1>
+        <h1 className={styles.h1}>School Works</h1>
       </div>
       <div className={styles.body}>
         {projects.map((project, index) => {
