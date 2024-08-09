@@ -93,7 +93,7 @@ const projects = [
     title: "Strawberry list",
     src: "strawberry.jpg",
     color: "#c7fcc7",
-    href: "https://senacscs.github.io/t2/bernardo/terceiro/listaingles/",
+    href: "https://senacscs.github.io/t2/bernardo/terceiro/listaingles/src/",
   },
   {
     title: "Jogo",
