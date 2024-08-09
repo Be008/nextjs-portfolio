@@ -83,6 +83,24 @@ const projects = [
     color: "#706D63",
     href: "https://senacscs.github.io/t2/bernardo/segundo/cidade/index.html",
   },
+  {
+    title: "Indicações mobile",
+    src: "mobile.png",
+    color: "#8c8c8c",
+    href: "https://senacscs.github.io/t2/bernardo/terceiro/indicacoesmobile/",
+  },
+  {
+    title: "Strawberry list",
+    src: "strawberry.jpg",
+    color: "#c7fcc7",
+    href: "https://senacscs.github.io/t2/bernardo/terceiro/listaingles/",
+  },
+  {
+    title: "Jogo",
+    src: "jogo.jpg",
+    color: "#535453",
+    href: "https://senacscs.github.io/t2/bernardo/terceiro/jogo_texto/",
+  },
 ];
 
 export default function Home() {

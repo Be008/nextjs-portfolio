@@ -9,3 +9,7 @@
   color: #202024;
   background: #fff;
 }
+
+body{
+  overflow-y: hidden;
+}
