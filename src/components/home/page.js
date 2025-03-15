@@ -15,7 +15,7 @@ export default function index() {
           <div className={styles.left}>
             <AnimatedTextBio
               text={
-                "Greetings, my name is Bernardo Etges da Silva, and I am a passionate programming enthusiast. Currently, I am enrolled in high school and technical education at Senac RS school, where I am learning about both front-end and back-end development."
+                "Greetings, my name is Bernardo Etges da Silva, and I am a front-end developer passionate about technology, creativity, and design. My journey began in high school, where I explored both front-end and back-end development. Today, I focus on crafting engaging digital experiences, blending technical precision with artistic expression."
               }
             />
           </div>

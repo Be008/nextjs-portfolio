@@ -12,12 +12,6 @@ const projects = [
     href: "https://senacscs.github.io/t2/bernardo/primeiro/indicacoesfront/indicacoes.html",
   },
   {
-    title: "Projeto PP (2022)",
-    src: "tcc.jpg",
-    color: "#635649",
-    href: "https://senacscs.github.io/t2/bernardo/primeiro/projeto1/index.html",
-  },
-  {
     title: "Fibonacci (2022)",
     src: "fibonacci.jpg",
     color: "#EFE8D3",
@@ -84,22 +78,28 @@ const projects = [
     href: "https://senacscs.github.io/t2/bernardo/segundo/cidade/index.html",
   },
   {
-    title: "Indicações mobile",
+    title: "Indicações mobile (2024)",
     src: "mobile.png",
     color: "#8c8c8c",
     href: "https://senacscs.github.io/t2/bernardo/terceiro/indicacoesmobile/",
   },
   {
-    title: "Strawberry list",
+    title: "Strawberry list (2024)",
     src: "strawberry.jpg",
     color: "#c7fcc7",
     href: "https://senacscs.github.io/t2/bernardo/terceiro/listaingles/src/",
   },
   {
-    title: "Jogo",
+    title: "Jogo (2024)",
     src: "jogo.jpg",
     color: "#535453",
     href: "https://senacscs.github.io/t2/bernardo/terceiro/jogo_texto/",
+  },
+  {
+    title: "Projeto PP (2024)",
+    src: "tcc.jpg",
+    color: "#635649",
+    href: "https://chordz-orcin.vercel.app/",
   },
 ];
 
